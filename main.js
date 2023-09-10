@@ -30,7 +30,7 @@ function init(){
 	camera.position.set( 0, 200, 300 );
 
 	scene = new THREE.Scene();
-	scene.background = new THREE.Color( 0x222222 );
+	scene.background = new THREE.Color( 0xffffff );
 
 	raycaster = new THREE.Raycaster();
 	pointer = new THREE.Vector2();
@@ -54,7 +54,7 @@ function init(){
 	for(let i = 0; i < BLOCKS_PER_SIDE; i++){
 		for (let j = 0; j < BLOCKS_PER_SIDE; j++){
 			const blockMaterial = new THREE.MeshMatcapMaterial({
-				color: 0xffffff,
+				color: 0x222222,
 				opacity: 0.0,
 				transparent: true
 			});
